@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Details</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+	 body {
+                width: 100%;
+                background: url(image/emp.jpg) ;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+</style>
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+			<h1>Employee Details Form</h1>
+			<p> Please fill out the form below with your details.</p>
+		</header>
+		<div class="employee">
+			<form class="addEmp" action="daoModel.jsp" method="post" enctype="multipart/form-data">
+				<div>
+					<table cellspacing=10 cellpadding=10 colspan=2 rowspan=2 align="center" >			
+						<tr>
+							<td>
+								<label>FirstName</label>
+							</td>
+							<td>
+								<label>LastName:</label>
+							</td>
+						</tr>
+						<tr>
+							<td><input class="name" type=text name="empfirstname" placeholder="Enter the FirstName" required></td>
+							<td><input class="name" type=text name="emplastname" placeholder="Enter the LastName" required></td>
+						</tr>
+						<tr>
+							<td>
+								<label>Email Address :</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="inputbox" type="email" name="empmail" placeholder="Enter your Email Address" required /> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Contact Number :</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="inputbox" type="phone" name="empcontact" placeholder="Enter your Contact Number " required/> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>City of Residence :</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select name="empcity" class="selection" id="city">
+									  <option value="">--Please choose an option--</option>
+									  <option value="chennai">Chennai</option>
+									  <option value="coimbatore">Coimbatore</option>
+									  <option value="trichy">Trichy</option>
+									  <option value="thanjavur">Thanjavur</option>
+								</select> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>States :</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="inputbox" type="state" name="empstates" placeholder="Enter your States" required/> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Country</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="inputbox" type="country" name="empcountry" placeholder="Enter your Date Of Birth" required/> 
+							</td>
+						</tr>
+						<tr> 
+							<td colspan="2">
+								<label for="Message">
+									<b>Why do you want to apply?</b>
+								</label><br><br>
+								<textarea name="empmessage" rows="7" cols="40" style="width:100%;max-width: 570px" required></textarea>
+							</td> 
+						</tr>
+						<tr>
+							<td>
+								<label for="file">Resume:</label>
+   								<input type="file" id="file" class="file" name="file" required><br><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="submit" type="submit"></input><br>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<br>
+				</div>
+			</form>
+			</div>
+			</div>
+		</body>
+	<script src="js/script.js"></script>
+</html>
